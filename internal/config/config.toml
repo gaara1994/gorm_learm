@@ -1,0 +1,24 @@
+[server]
+port = "8080"
+
+[database]
+host = "localhost"
+port = 5432
+user = "postgres"
+password = "MyNewPass4!"
+name = "gorm_learn"
+sslmode = "disable"
+max_open_conns = 10
+max_idle_conns = 5
+
+[logging]
+level = "info"
+file = "app.log"
+
+[auth]
+jwt_secret = "your-very-secret-key"
+token_expiration = "24h"
+
+[feature_flags]
+enable_feature_x = true
+enable_feature_y = false
